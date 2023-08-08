@@ -9,11 +9,15 @@ function App() {
   const [light, setLight] = useState("off");
 
   const dark = (light === 'off') ? 'dark' : '';
+
   return (
     <div className={`App ${dark}`}>
       <AngryButton />
       <CounterButton  />
-      <LightSwitchButton light={light} setLight={setLight} />
+      <LightSwitchButton 
+        light={light}
+        setLight={setLight}
+      />
       <TextRepeaterButton />
     </div>
   );
