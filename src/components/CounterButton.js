@@ -5,11 +5,16 @@ function CounterButton() {
 
   const [clickAmount, setclickAmount] = useState(0);
 
+  const handleClick = (amount) => {
+    setclickAmount(clickAmount + amount);
+  }
+
   return (
-    <button 
+    <button
       className="CounterButton"
-      >
-    You clicked me {clickAmount} amount of times
+      onClick={() => handleClick(1)}
+    >
+      You clicked me {clickAmount} amount of times
     </button>
   );
 }
