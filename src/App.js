@@ -8,8 +8,9 @@ import React, { useState } from "react";
 function App() {
   const [light, setLight] = useState("off");
 
+  const dark = (light === 'off') ? 'dark' : '';
   return (
-    <div className="App">
+    <div className={`App ${dark}`}>
       <AngryButton />
       <CounterButton  />
       <LightSwitchButton light={light} setLight={setLight} />
