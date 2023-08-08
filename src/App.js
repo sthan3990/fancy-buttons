@@ -8,7 +8,7 @@ function App() {
   return (
     <div className="App">
       <AngryButton />
-      <CounterButton />
+      <CounterButton  />
       <LightSwitchButton />
       <TextRepeaterButton />
     </div>
